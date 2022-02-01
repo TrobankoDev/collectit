@@ -1,0 +1,9 @@
+name: CollectIt
+version: '${project.version}'
+main: me.trobanko.collectit.CollectIt
+api-version: 1.18
+authors: [ Trobanko ]
+description: A spin-off of the popular Chunk Collectors plugin!
+commands:
+  collectit:
+    description: Main command

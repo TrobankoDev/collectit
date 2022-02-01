@@ -1,0 +1,7 @@
+upgrade-levels:
+  1:
+    items: 32
+  2:
+    items: 3584
+  3:
+    items: 5916

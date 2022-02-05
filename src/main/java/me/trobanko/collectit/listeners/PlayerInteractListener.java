@@ -2,7 +2,7 @@ package me.trobanko.collectit.listeners;
 
 import me.trobanko.collectit.CollectIt;
 import me.trobanko.collectit.collectorUtils.Collector;
-import me.trobanko.collectit.menumanager.StorageMenu;
+import me.trobanko.collectit.menumanager.MenuHandler;
 import org.bukkit.Material;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
@@ -13,7 +13,7 @@ import java.util.Objects;
 
 public class PlayerInteractListener implements Listener {
 
-    private final StorageMenu storageMenu = new StorageMenu();
+    private final MenuHandler storageMenu = new MenuHandler();
 
     @EventHandler
     public void onPlayerInteract(PlayerInteractEvent e){
@@ -27,7 +27,7 @@ public class PlayerInteractListener implements Listener {
         }
         if(collector == null) return;
 
-        storageMenu.openStorageMenu(e.getPlayer(), collector);
+        storageMenu.openMainMenu(e.getPlayer(), collector);
 
     }
 
